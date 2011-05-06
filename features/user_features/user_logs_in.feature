@@ -4,7 +4,6 @@ Feature: User logs in
   I would like to log in to the application
 
   Scenario: User logs in successfully
-    Given I am not logged in
     Given I am on the login page
     Given I fill in "Username" with my username
     And I fill in "Password" with my password
