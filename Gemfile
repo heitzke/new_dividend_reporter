@@ -5,6 +5,7 @@ gem 'mysql2', '0.2.7'
 gem 'devise'
 gem 'capybara'
 gem 'database_cleaner'
+gem 'haml'
 
 
 group :development, :test do
