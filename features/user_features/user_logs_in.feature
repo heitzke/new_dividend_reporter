@@ -5,8 +5,8 @@ Feature: User logs in
 
   Scenario: User logs in successfully
     Given I am on the login page
-    Given I fill in "Username" with my username
-    And I fill in "Password" with my password
+    Given I fill in "Email" with "user@example.com"
+    And I fill in "Password" with "password21" 
     When I press "Sign In"
     Then I should see "My Watchlist"
 
