@@ -6,6 +6,9 @@ gem 'devise'
 gem 'capybara'
 gem 'database_cleaner'
 
+
 group :development, :test do
   gem 'cucumber-rails'
+  gem 'rspec-rails'
+  gem 'machinist', '~> 1.0.6'
 end
