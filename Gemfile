@@ -10,6 +10,7 @@ gem 'haml'
 
 group :development, :test do
   gem 'cucumber-rails'
+  gem 'pickle'
   gem 'rspec-rails'
   gem 'machinist', '~> 1.0.6'
 end
