@@ -9,11 +9,11 @@ gem 'haml'
 
 
 group :development, :test do
-  gem 'cucumber-rails'
-  gem 'pickle'
-  gem 'rspec-rails'
+  gem 'cucumber-rails', '~> 0.3.2'
+  gem 'pickle', '~> 0.4.2'
+  gem 'rspec-rails', '= 2.0.1'
   gem 'machinist', '~> 1.0.6'
-  gem 'faker'
-  gem 'sham'
-  gem 'launchy'
+  gem 'faker', '~> 0.9.5'
+  gem 'shoulda', '~> 2.11.3'
+  gem 'launchy', '~> 0.3.7'
 end

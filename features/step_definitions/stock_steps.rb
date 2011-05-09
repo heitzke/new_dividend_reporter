@@ -1,4 +1,4 @@
-Given /^a stock exists$/ do
+Given /^there is a stock$/ do
   Stock.make
 end
 
