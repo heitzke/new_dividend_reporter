@@ -10,4 +10,7 @@ Given /^I am on the create account page$/ do
   visit new_user_registration_path 
 end
 
+Given /^I am on the stocks index page$/ do
+  visit stocks_path
+end
 

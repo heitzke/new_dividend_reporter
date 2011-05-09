@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 gem 'mysql2', '0.2.7'
 gem 'devise'
-gem 'capybara'
+gem 'capybara', '0.3.9'
 gem 'database_cleaner'
 gem 'haml'
 

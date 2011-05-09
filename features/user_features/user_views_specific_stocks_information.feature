@@ -5,5 +5,6 @@ Feature: User views a specific stock's information
 
   Scenario: user views a stock's show page
     Given a stock exists with company_name: "Google, Inc."
+    Given I am on the stocks index page
     When I follow "Google, Inc."
     Then I should see "Stock Information : Google, Inc."
