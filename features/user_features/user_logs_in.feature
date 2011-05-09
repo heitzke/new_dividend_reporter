@@ -7,21 +7,19 @@ Feature: User logs in
     Given I am on the login page
     Given I fill in "Email" with "user@example.com"
     And I fill in "Password" with "password21" 
-    When I press "Sign In"
+    When I press "Sign in"
     Then I should see "My Watchlist"
 
   Scenario: User logs in unsuccessfully because of incorrect password
-    Given I am not logged in
     Given I am on the login page
-    Given I fill in "Username" with my username
-    And I fill in "Password" with something other than my password
-    When I press "Sign In"
-    Then I should see "Password Incorrect"
+    Given I fill in "Email" with "user@example.com"
+    And I fill in "Password" with "password222"
+    When I press "Sign in"
+    Then I should see "Invalid email or password"
 
   Scenario: User logs in unsuccessfully because of incorrect username
-    Given I am not logged in
     Given I am on the login page
-    Given I fill in "Username" with something other than my username
-    Given I fill in "Password" with my password
-    When I press "Sign In"
-    Then I should see "Username Error"
+    Given I fill in "Email" with "buser@example.com"
+    Given I fill in "Password" with "password21"
+    When I press "Sign in"
+    Then I should see "Invalid email or password"

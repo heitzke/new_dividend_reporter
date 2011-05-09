@@ -13,4 +13,6 @@ group :development, :test do
   gem 'pickle'
   gem 'rspec-rails'
   gem 'machinist', '~> 1.0.6'
+  gem 'faker'
+  gem 'sham'
 end
