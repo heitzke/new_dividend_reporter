@@ -8,3 +8,8 @@ Sham.define do
   # Ticker
   ticker                          { |index| index.to_s(0..3)          }
 end
+
+Stock.blueprint do
+  company_name
+  ticker
+end
