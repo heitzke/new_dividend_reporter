@@ -7,7 +7,7 @@ Sham.define do
   # Stock
   company_name                    { |index| index.to_s                }
   # Ticker
-  ticker                          { |index| index.to_s(0..3)          }
+  ticker                          { |index| index.to_s                }
 end
 
 Stock.blueprint do

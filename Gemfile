@@ -16,4 +16,5 @@ group :development, :test do
   gem 'faker', '~> 0.9.5'
   gem 'shoulda', '~> 2.11.3'
   gem 'launchy', '~> 0.3.7'
+  gem 'simplecov'
 end
