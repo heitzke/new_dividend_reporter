@@ -3,5 +3,6 @@ class StocksController < ApplicationController
   end
 
   def index
+    @stocks = Stock.all
   end
 end

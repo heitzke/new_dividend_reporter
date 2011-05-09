@@ -1,0 +1,43 @@
+--- 
+Cucumber Features: 
+  :original_result: 
+    /home/allan/rails_projects/new_dividend_reporter/app/models/admin.rb: 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    /home/allan/rails_projects/new_dividend_reporter/app/models/user.rb: 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    /home/allan/rails_projects/new_dividend_reporter/app/controllers/application_controller.rb: 
+    - 1
+    - 1
+    - 
+    /home/allan/rails_projects/new_dividend_reporter/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    /home/allan/rails_projects/new_dividend_reporter/app/controllers/stocks_controller.rb: 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    /home/allan/rails_projects/new_dividend_reporter/app/models/stock.rb: 
+    - 1
+    - 
+  :created_at: 2011-05-09 13:47:37.185224 -05:00
