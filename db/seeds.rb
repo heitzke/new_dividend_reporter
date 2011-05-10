@@ -13,6 +13,6 @@
   stock = Stock.all
   stock.each do |stock|
     10.times do
-      Quote.create([{ :last_price => rand(600).to_f, :ex_dividend_date => "05/05/2010", :dividend_pay_date => "04/04/12", :dividend_yield => rand(50).to_f, :dividends_per_share => rand(50).to_f }])
+      Quote.create([{ :stock => stock, :last_price => rand(600).to_f, :ex_dividend_date => "05/05/2010", :dividend_pay_date => "04/04/12", :dividend_yield => rand(50).to_f, :dividends_per_share => rand(50).to_f }])
     end
   end

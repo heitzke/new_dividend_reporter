@@ -5,6 +5,10 @@
       %th company name
       %th ticker
       %th last price
+      %th ex dividend date
+      %th dividend pay date
+      %th dividend yield
+      %th dividend per share
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
@@ -12,4 +16,8 @@
         %td= link_to 'Watch', stock_path(stock)
         %td= link_to stock.company_name, stock_path(stock)
         %td= stock.ticker
-        %td= stock.quote.last.last_price
+        %td= stock.quotes.last.last_price
+        %td= stock.quotes.last.ex_dividend_date
+        %td= stock.quotes.last.dividend_pay_date
+        %td= stock.quotes.last.dividend_yield
+        %td= stock.quotes.last.dividends_per_share
