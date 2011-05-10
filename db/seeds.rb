@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+#
+  25.times do
+    Stock.create([{ :company_name => Faker::Company.name, :ticker => (0..3).map{65.+(rand(25)).chr}.join }])
+  end
