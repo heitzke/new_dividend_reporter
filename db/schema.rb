@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110509211438) do
+ActiveRecord::Schema.define(:version => 20110510154139) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(:version => 20110509211438) do
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
+
+  create_table "quotes", :force => true do |t|
+    t.float    "last_price"
+    t.string   "ex_dividend_date"
+    t.string   "dividend_pay_date"
+    t.float    "dividend_yield"
+    t.float    "dividends_per_share"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stocks", :force => true do |t|
     t.string   "ticker"
