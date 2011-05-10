@@ -6,7 +6,7 @@ gem 'devise'
 gem 'capybara', '0.3.9'
 gem 'database_cleaner'
 gem 'haml'
-
+gem 'rocco'
 
 group :development, :test do
   gem 'cucumber-rails', '~> 0.3.2'
