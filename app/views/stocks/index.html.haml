@@ -1,12 +1,13 @@
 %table.stocks
   %thead
     %tr
-      %th
-      %th ticker
+      %th watch
       %th company name
+      %th ticker
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
-        %td= stock.id
+        /stock_path(stock) is incorrect here, but watch method is not yet implemented
+        %td= link_to 'Watch', stock_path(stock)
         %td= link_to stock.company_name, stock_path(stock)
         %td= stock.ticker
