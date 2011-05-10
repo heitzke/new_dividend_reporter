@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110510154139) do
+ActiveRecord::Schema.define(:version => 20110510183438) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20110510154139) do
     t.float    "dividends_per_share"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "stock_id"
   end
 
   create_table "stocks", :force => true do |t|

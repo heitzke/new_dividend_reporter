@@ -4,6 +4,7 @@
       %th watch
       %th company name
       %th ticker
+      %th last price
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
@@ -11,3 +12,4 @@
         %td= link_to 'Watch', stock_path(stock)
         %td= link_to stock.company_name, stock_path(stock)
         %td= stock.ticker
+        %td= stock.quote.last.last_price
