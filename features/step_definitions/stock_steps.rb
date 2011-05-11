@@ -3,6 +3,7 @@ Given /^there is a stock$/ do
 end
 
 Given /^there is a stock with company_name: "([^"]*)"$/ do |name|
-  Stock.make(:company_name => name)
+  @stock = Stock.make(:company_name => name)
+  @quote = Quote.make(:stock_id => @stock.id)
 end
 
