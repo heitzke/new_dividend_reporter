@@ -4,10 +4,9 @@ Feature: Logged-in user sees corresponding topbar
   I would like to be able to see the appropriate topbar options
 
   Scenario: User sees his/her email address as link in topbar
-    Given I am an authenticated user with email: "bob@example.com"
+    Given I am an authenticated user
     When I am on the stocks index page
-    Then show me the page
-    Then I should see "bob@example.com"
+    Then I should see my email address
 
   Scenario: User sees logout link in topbar when logged in
     Given I am an authenticated user

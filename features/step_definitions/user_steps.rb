@@ -14,13 +14,12 @@ Given /^I am on the stocks index page$/ do
   visit stocks_path
 end
 
-Given /^I am an authenticated user with email: "([^"]*)"$/ do |email|
-  u = User.make
-  u.update_attributes(:email => email)
-  u.save
-  current_user = u
+Given /^I am an authenticated user$/ do
+  @user = User.make
 end
 
-Given /^I am an authenticated user$/ do
-    pending # express the regexp above with the code you wish you had
+Then /^I should see my email address$/ do
+  page.should have_content(@user.email) 
 end
+
+
