@@ -3,6 +3,15 @@ Given /^I am on the login page$/ do
   visit new_user_session_path
 end
 
+Given /^I am logged in$/ do
+  Given %Q{I am on the new user registration page}
+  And %Q{I fill in "Email" with "test@user.com"}
+  And %Q{I fill in "Password" with "password21"}
+  And %Q{I fill in "Password confirmation" with "password21"}
+  And %Q{I press "Sign up"}
+  @user = User.find_by_email('test@user.com')
+end
+
 Given /^I am not logged in$/ do
   current_user = nil
 end
@@ -44,6 +53,6 @@ Given /^I am an authenticated user$/ do
 end
 
 When /^I visit my user show page$/ do
-    pending # express the regexp above with the code you wish you had
+  visit user_path(@user)
 end
 

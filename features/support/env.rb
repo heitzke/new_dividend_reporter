@@ -1,3 +1,4 @@
+require 'ruby-debug'
 # Simplecov Setup
 require 'simplecov'
 SimpleCov.start 'rails' do
