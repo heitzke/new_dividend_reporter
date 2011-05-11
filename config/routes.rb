@@ -5,4 +5,6 @@ NewDividendReporter::Application.routes.draw do
 
   root :to => "stocks#index"
   resources :stocks
+  get 'stocks/:id/watch' => "stocks#watch", :as => 'stocks_watch'
+  
 end

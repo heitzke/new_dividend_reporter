@@ -12,8 +12,7 @@
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
-        /stock_path(stock) is incorrect here, but watch method is not yet implemented
-        %td= link_to 'Watch', stock_path(stock)
+        %td= link_to 'watch', stocks_watch_path(stock)
         %td= link_to stock.company_name, stock_path(stock)
         %td= stock.ticker
         %td= stock.quotes.last.last_price

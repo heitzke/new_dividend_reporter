@@ -9,6 +9,7 @@ gem 'haml'
 gem 'rocco'
 
 group :development, :test do
+  gem 'ruby-debug19'
   gem 'cucumber-rails', '~> 0.3.2'
   gem 'pickle', '~> 0.4.2'
   gem 'rspec-rails', '= 2.0.1'
