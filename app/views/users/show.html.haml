@@ -1,0 +1,4 @@
+- if UserStockWatches.find_by_user_id(@user.id) != nil
+  = Stock.find_by_id(UserStockWatches.find_by_user_id(@user.id)).company_name 
+- else
+  poop

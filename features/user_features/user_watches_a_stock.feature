@@ -11,5 +11,7 @@ Feature: User watches a stock
     When I am on the stocks index page
     Then show me the page
     And I follow "watch"
-    And I visit my user show page
+    Then show me the page
+    And I follow "test@user.com"
+    Then show me the page
     Then I should see "Google, Inc."
