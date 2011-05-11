@@ -26,3 +26,10 @@ User.blueprint do
   middle_initial(:unique => false)  { ('A'..'Z').to_a.sample  }
 end
 
+Quote.blueprint do
+  last_price                        { 25.06                   }
+  dividend_yield                    { 7.54                    }
+  ex_dividend_date                  { "05/05/2010"            }
+  dividend_pay_date                 { "07/07/2011"            }
+  dividends_per_share               { 1.37                    }
+end
