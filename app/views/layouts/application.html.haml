@@ -11,5 +11,11 @@
     = notice
     .alert
     = alert
+  #wrapper.yui3-u-1
+    #topbar.yui3-u-1
+      - if current_user
+        - render :partial => "top_bar_logged_out"
+      - else
+        - render :partial => "top_bar_logged_out"
   = yield
 
