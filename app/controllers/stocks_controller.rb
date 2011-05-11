@@ -11,9 +11,12 @@ class StocksController < ApplicationController
   end
 
   def watch
-    @stock = Stock.find(params[:id])
-
-    UserStockWatches.create(:stock_id => @stock.id, :user_id => 1)
-    redirect_to '/'
+    if current_user
+      @stock = Stock.find(params[:id])
+      UserStockWatches.create(:stock_id => @stock.id, :user_id => 1)
+      redirect_to '/'
+    else
+      render 'pages/must_be_logged_in'
+    end
   end
 end
