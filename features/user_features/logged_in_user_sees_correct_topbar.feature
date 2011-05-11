@@ -6,6 +6,7 @@ Feature: Logged-in user sees corresponding topbar
   Scenario: User sees his/her email address as link in topbar
     Given I am an authenticated user with email: "bob@example.com"
     When I am on the stocks index page
+    Then show me the page
     Then I should see "bob@example.com"
 
   Scenario: User sees logout link in topbar when logged in

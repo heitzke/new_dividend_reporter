@@ -17,6 +17,7 @@ end
 Given /^I am an authenticated user with email: "([^"]*)"$/ do |email|
   u = User.make
   u.update_attributes(:email => email)
+  u.save
   current_user = u
 end
 
