@@ -9,9 +9,9 @@
     #wrapper.yui3-u-1
       #topbar.yui3-u-1
         - if current_user
-          = render :partial => "stocks/top_bar_logged_in"
+          = render :partial => "shared/top_bar_logged_in"
         - else
-          = render :partial => "stocks/top_bar_logged_out"
+          = render :partial => "shared/top_bar_logged_out"
       #content.yui3-u-1
         = yield
       %body
