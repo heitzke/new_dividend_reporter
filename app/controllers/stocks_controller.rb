@@ -11,13 +11,12 @@ class StocksController < ApplicationController
   end
 
   def watch
-    if current_user
-      @user = current_user
-      @stock = Stock.find(params[:id])
-      UserStockWatch.create(:stock_id => @stock.id, :user_id => @user.id)
+    if current_user && stock = Stock.find(params[:id])
+      current_user.watch stock
       redirect_to '/'
     else
-      render 'pages/must_be_logged_in'
+      flash[:error] = "There was a problem add the stock to your watchlist"
+      redirect_to root_path
     end
   end
 end

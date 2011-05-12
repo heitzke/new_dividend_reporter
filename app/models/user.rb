@@ -8,4 +8,12 @@ class User < ActiveRecord::Base
   attr_accessible :first_name, :last_name, :middle_initial, :email, :password, :password_confirmation, :remember_me
   has_many :stocks, :through => :user_stock_watches
   has_many :user_stock_watches
+
+  def watch stock
+    self.user_stock_watches.create(:stock => stock)
+  end
+
+  def unwatch stock
+    self.stocks.destroy stock
+  end
 end

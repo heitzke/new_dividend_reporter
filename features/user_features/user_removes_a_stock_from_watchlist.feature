@@ -8,5 +8,5 @@ Feature: User stops watching a stock
     Given I have a stock on my watchlist
     Given I am on the stocks index page
     And I follow "test@user.com"
-    When I follow "Remove"
-    Then I should see 'Stock successfully removed from watchlist'
+    When I follow "remove"
+    Then I should see "Stock successfully removed from watchlist"

@@ -9,4 +9,5 @@ NewDividendReporter::Application.routes.draw do
   get 'stocks/:id/watch' => "stocks#watch", :as => 'stocks_watch'
   get 'pages/help' => "pages#help", :as => 'pages_help'
   get 'users/:id/' => "users#show", :as => 'user_show'
+  get 'users/remove_watch/:id' => "users#remove_watch", :as => 'user_remove_watch'
 end
