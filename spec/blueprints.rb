@@ -33,3 +33,8 @@ Quote.blueprint do
   dividend_pay_date                 { "07/07/2011"            }
   dividends_per_share               { 1.37                    }
 end
+
+UserStockWatches.blueprint do
+  stock_id
+  user_id
+end
