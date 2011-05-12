@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   end
 
   def unwatch stock
-    self.stocks.destroy stock
+    something = self.user_stock_watches.find_by_stock_id stock
+    something.destroy
   end
 end
