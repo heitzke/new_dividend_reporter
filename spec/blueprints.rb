@@ -34,7 +34,7 @@ Quote.blueprint do
   dividends_per_share               { 1.37                    }
 end
 
-UserStockWatches.blueprint do
+UserStockWatch.blueprint do
   stock_id
   user_id
 end

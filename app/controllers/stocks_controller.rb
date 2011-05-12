@@ -12,8 +12,9 @@ class StocksController < ApplicationController
 
   def watch
     if current_user
+      @user = current_user
       @stock = Stock.find(params[:id])
-      UserStockWatches.create(:stock_id => @stock.id, :user_id => 1)
+      UserStockWatch.create(:stock_id => @stock.id, :user_id => @user.id)
       redirect_to '/'
     else
       render 'pages/must_be_logged_in'
