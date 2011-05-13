@@ -9,9 +9,6 @@ Feature: User watches a stock
   Scenario: User adds a stock to his/her watchlist
     Given there is a stock with company_name: "Google, Inc."
     When I am on the stocks index page
-    Then show me the page
     And I follow "watch"
-    Then show me the page
     And I follow "test@user.com"
-    Then show me the page
     Then I should see "Google, Inc."

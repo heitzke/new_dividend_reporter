@@ -4,7 +4,7 @@ Feature: user views stock index
   I would like to be able to see a list of stocks on the landing page
 
   Scenario: user sees stock index page
+    Given I am logged in
     Given there is a stock with company_name: "test company"
-    When I go to the stocks index page
-    Then show me the page
+    When I am on the stocks index page
     Then I should see "test company" 
