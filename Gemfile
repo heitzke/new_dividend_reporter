@@ -7,6 +7,7 @@ gem 'capybara', '0.3.9'
 gem 'database_cleaner'
 gem 'haml'
 gem 'rocco'
+gem 'yahoo_finance', :git => 'git@github.com:paranoidminotaur/yahoo_finance.git'
 
 group :development, :test do
   gem 'ruby-debug19'
