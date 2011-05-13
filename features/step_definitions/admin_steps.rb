@@ -1,5 +1,5 @@
 Given /^I am authenticated administrator$/ do
-  pending # express the regexp above with the code you wish you had
+  @user.update_attributes(:admin => true)
 end
 
 Given /^I am on the admin new stock page$/ do

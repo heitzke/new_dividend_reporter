@@ -4,6 +4,7 @@ Feature: Admin adds a stock
   I would like to be able to add a stock symbol
 
   Scenario: Admin adds a stock to masterlist
+    Given I am logged in
     Given I am authenticated administrator
     Given I am on the admin new stock page
     When I fill in "Stock Symbols" with "GOOG"

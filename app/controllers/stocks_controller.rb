@@ -1,5 +1,6 @@
 class StocksController < ApplicationController
   def new
+    @stock = Stock.create
   end
 
   def index
