@@ -152,7 +152,6 @@ GEM
     tzinfo (0.3.27)
     warden (1.0.4)
       rack (>= 1.0)
-    yahoofinance (1.2.2)
 
 PLATFORMS
   ruby
@@ -174,4 +173,3 @@ DEPENDENCIES
   ruby-debug19
   shoulda (~> 2.11.3)
   simplecov
-  yahoofinance
