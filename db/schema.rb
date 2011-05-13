@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110513153932) do
+ActiveRecord::Schema.define(:version => 20110513154806) do
 
   create_table "quotes", :force => true do |t|
     t.float    "last_price"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20110513153932) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "middle_initial"
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
