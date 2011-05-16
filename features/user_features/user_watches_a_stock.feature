@@ -10,3 +10,9 @@ Feature: User watches a stock
     And I follow "watch"
     Then I follow "test@user.com"
     Then I should see "Google, Inc."
+
+  Scenario: User can't add a stock if not logged in
+    Given there is a stock with company_name: "Google, Inc."
+    Given I am on the stocks index page
+    When I follow "watch"
+    Then I should see "you must be logged in to take advantage of this feature"

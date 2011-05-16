@@ -1,7 +1,6 @@
 class StocksController < ApplicationController
   #before_filter :must_be_logged_in, :only => [:watch]
   def new
-    @stock = Stock.new
   end
 
   def index
@@ -19,7 +18,7 @@ class StocksController < ApplicationController
     elsif !current_user
       render 'pages/must_be_logged_in'
     else
-      flash[:error] = "There was a problem add the stock to your watchlist"
+      flash[:error] = "There was a problem adding the stock to your watchlist"
       redirect_to root_path
     end
   end

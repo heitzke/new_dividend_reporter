@@ -36,9 +36,6 @@ Cucumber Features:
     /home/allan/rails_projects/new_dividend_reporter/app/controllers/application_controller.rb: 
     - 1
     - 1
-    - 1
-    - 0
-    - 
     - 
     /home/allan/rails_projects/new_dividend_reporter/app/helpers/application_helper.rb: 
     - 1
@@ -46,7 +43,7 @@ Cucumber Features:
     /home/allan/rails_projects/new_dividend_reporter/app/controllers/admin_controller.rb: 
     - 1
     - 1
-    - 4
+    - 6
     - 
     - 
     - 1
@@ -54,21 +51,21 @@ Cucumber Features:
     - 1
     - 1
     - 1
-    - 0
+    - 1
     - 
     - 1
     - 1
     - 1
     - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 1
     - 0
     - 0
-    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
     - 
     - 0
     - 0
@@ -87,38 +84,35 @@ Cucumber Features:
     - 1
     - 
     - 1
-    - 0
+    - 1
     - 
     - 
     - 
     /home/allan/rails_projects/new_dividend_reporter/app/controllers/quotes_controller.rb: 
     - 1
     - 1
-    - 0
-    - 0
     - 
     - 
     /home/allan/rails_projects/new_dividend_reporter/app/controllers/stocks_controller.rb: 
     - 1
     - 
     - 1
-    - 0
     - 
     - 
     - 1
-    - 17
-    - 
-    - 
-    - 1
-    - 1
+    - 20
     - 
     - 
     - 1
     - 1
+    - 
+    - 
+    - 1
+    - 2
     - 1
     - 1
-    - 0
-    - 0
+    - 1
+    - 1
     - 
     - 0
     - 0
@@ -173,16 +167,15 @@ Cucumber Features:
     - 1
     - 2
     - 2
-    - 1
-    - 0
-    - 
-    - 1
-    - 
-    - 1
+    - 2
     - 1
     - 
     - 1
     - 
+    - 2
+    - 2
+    - 
+    - 2
     - 
     - 
     - 
@@ -191,4 +184,5 @@ Cucumber Features:
     - 
     - 
     - 
-  :created_at: 2011-05-16 13:59:50.131940 -05:00
+    - 
+  :created_at: 2011-05-16 15:01:53.907883 -05:00

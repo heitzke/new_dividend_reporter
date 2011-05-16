@@ -17,3 +17,4 @@ Feature: Logged-in user sees corresponding topbar
     Given I am logged in
     When I am on the stocks index page
     Then I should see "Dividend Reporter"
+
