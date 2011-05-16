@@ -4,7 +4,7 @@ Feature: Admin updates all quotes
   I would like to be able to update all quotes at one time
 
   Scenario: Admin update all quotes at one time
-    Given I am an authenticated administrator
-    Given I am on the admin new quotes page
-    When I press "Update"
-    Then I should see "Quotes updated successfully"
+    Given I am logged in as an administrator
+    Given I am on the admin panel page
+    When I follow "Update all quotes"
+    Then I should see "All quotes successfully updated"

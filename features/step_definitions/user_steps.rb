@@ -54,3 +54,16 @@ When /^I visit my user show page$/ do
   visit user_path(@user)
 end
 
+Given /^I am logged in as an administrator$/ do
+  Given %Q{I am on the new user registration page}
+  And %Q{I fill in "Email" with "test@user.com"}
+  And %Q{I fill in "Password" with "password21"}
+  And %Q{I fill in "Password confirmation" with "password21"}
+  And %Q{I press "Sign up"}
+  User.find_by_email('test@user.com').update_attributes :admin => true
+  @user = User.find_by_email('test@user.com')
+end
+
+Given /^I am on the admin panel page$/ do
+  visit admin_panel_path
+end
