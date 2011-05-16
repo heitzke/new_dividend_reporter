@@ -67,3 +67,4 @@ end
 Given /^I am on the admin panel page$/ do
   visit admin_panel_path
 end
+
