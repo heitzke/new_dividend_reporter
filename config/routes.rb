@@ -12,4 +12,5 @@ NewDividendReporter::Application.routes.draw do
   get 'users/remove_watch/:id' => "users#remove_watch", :as => 'user_remove_watch'
   get 'admin/panel' => "admin#index", :as => 'admin_panel'
   get 'admin/update_quotes' => "admin#update_quotes", :as => 'admin_update_quotes'
+  get 'admin/remove_stock/:id' => "admin#remove_stock", :as => 'admin_remove_stock'
 end

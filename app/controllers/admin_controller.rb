@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
   def index
+    @stocks = Stock.all
   end
 
   def update_quotes
@@ -18,4 +19,13 @@ class AdminController < ApplicationController
     end
   end
 
+  def remove_stock
+    if Stock.find(params[:id]).destroy
+      flash[:notice] = "Stock successfully removed"
+      redirect_to admin_panel_path
+    else
+      flash.now[:error] = "Unable to remove stock"
+      redirect_to admin_panel_path
+    end
+  end
 end
