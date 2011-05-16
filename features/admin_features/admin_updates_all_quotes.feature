@@ -4,6 +4,7 @@ Feature: Admin updates all quotes
   I would like to be able to update all quotes at one time
 
   Scenario: Admin update all quotes at one time
+    Given there is a stock with company_name: "Google Inc."
     Given I am logged in as an administrator
     Given I am on the admin panel page
     When I follow "Update all quotes"
