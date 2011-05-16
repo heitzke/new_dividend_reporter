@@ -12,6 +12,14 @@
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
+      - if current_user.user_stock_watches.find_by_stock_id(stock.id)
+        %td= link_to 'unwatch', user_remove_watch_path(stock)
+        %td= link_to stock.company_name, stock_path(stock)
+        %td= stock.ticker
+        %td= stock.quotes.last.last_price
+        %td= stock.quotes.last.ex_dividend_date
+        %td= stock.quotes.last.dividend_pay_date
+      - else
         %td= link_to 'watch', stocks_watch_path(stock)
         %td= link_to stock.company_name, stock_path(stock)
         %td= stock.ticker
