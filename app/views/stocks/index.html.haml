@@ -8,7 +8,7 @@
       %th ex dividend date
       %th dividend pay date
       %th dividend yield
-      %th dividend per share
+      %th.last dividend per share
   %tbody
     - @stocks.each do |stock|
       %tr{ :class => cycle("odd", "even") }
@@ -27,4 +27,4 @@
           %td= stock.quotes.last.ex_dividend_date
           %td= stock.quotes.last.dividend_pay_date
           %td= stock.quotes.last.dividend_yield
-          %td= stock.quotes.last.dividends_per_share
+          %td.last= stock.quotes.last.dividends_per_share

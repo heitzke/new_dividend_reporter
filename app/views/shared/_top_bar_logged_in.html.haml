@@ -3,8 +3,9 @@
     .yui3-u-1-5
       %h1
         = link_to 'Dividend Reporter', root_path
-    .yui3-u-3-4
-      = link_to current_user.email, user_path(current_user.id)
-        - if current_user && current_user.admin?
-        = link_to 'Admin Panel', admin_panel_path
-      = link_to 'logout', destroy_user_session_path
+    .yui3-u-4-5
+      .top_menu
+        = link_to current_user.email, user_path(current_user.id)
+          - if current_user && current_user.admin?
+          = link_to 'Admin Panel', admin_panel_path
+        = link_to 'logout', destroy_user_session_path
