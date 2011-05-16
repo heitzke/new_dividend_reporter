@@ -1,0 +1,34 @@
+html {
+}
+
+body {
+}
+
+#wrapper {
+  width:960px;
+  margin: 20px auto;
+  border:1px solid #ccc;
+}
+
+h1 {
+  font-size:1.4em;
+}
+
+#topbar {
+  background:#ccc;
+  padding: 5px;
+}
+
+#content table {
+  width:100%;
+}
+
+#content table tr {
+  border-top:1px solid #ccc;
+}
+
+#content table td {
+  border-right:1px solid #ccc;
+  padding: 4px 3px 4px 3px;
+}
+
