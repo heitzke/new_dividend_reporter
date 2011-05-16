@@ -28,4 +28,12 @@ class AdminController < ApplicationController
       redirect_to admin_panel_path
     end
   end
+
+  def add_stock
+    stock = Stock.new
+    x = YahooIntegrator.new
+    x.get_quotes [params[:ticker]]
+    stock.save
+    redirect_to admin_panel_path
+  end
 end

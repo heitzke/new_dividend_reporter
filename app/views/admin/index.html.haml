@@ -1,8 +1,12 @@
 = link_to 'Update all quotes', admin_update_quotes_path
+= form_tag(admin_add_stock_path, :method => "get") do
+  = label_tag(:ticker, "Add Stock (ticker):")
+  = text_field_tag(:ticker)
+  = submit_tag("Add Stock")
 %table.stocks
   %thead
     %tr
-      %th watch
+      %th remove
       %th company name
       %th ticker
       %th last price
