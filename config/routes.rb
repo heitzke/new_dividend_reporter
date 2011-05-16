@@ -10,4 +10,6 @@ NewDividendReporter::Application.routes.draw do
   get 'pages/help' => "pages#help", :as => 'pages_help'
   get 'users/:id/' => "users#show", :as => 'user_show'
   get 'users/remove_watch/:id' => "users#remove_watch", :as => 'user_remove_watch'
+  get 'admin/panel' => "admin#index", :as => 'admin_panel'
+  get 'admin/update_quotes' => "admin#update_quotes", :as => 'admin_update_quotes'
 end

@@ -1,3 +1,5 @@
 = link_to 'Dividend Reporter', root_path
 = link_to current_user.email, user_path(current_user.id)
+  - if current_user && current_user.admin?
+  = link_to 'Admin Panel', admin_panel_path
 = link_to 'logout', destroy_user_session_path
